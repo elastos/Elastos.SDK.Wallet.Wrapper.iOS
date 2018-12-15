@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		DE3300EE218E780400B22FCB /* ElastosSDKWallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB2486218DF5F200F07F42 /* ElastosSDKWallet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE52CF0721915A9C002C2177 /* ElastosSDKWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* ElastosSDKWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DE52CF0721915A9C002C2177 /* Elastos.SDK.Wallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* Elastos.SDK.Wallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE6CD88321BD04BE00930A67 /* Elastos.SDK.Wallet.C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE6CD88221BD04BE00930A67 /* Elastos.SDK.Wallet.C.framework */; };
 		DE6CD88621BD06AF00930A67 /* ElastosSDKWalletBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE6CD88421BD06AF00930A67 /* ElastosSDKWalletBridge.cpp */; };
 		DE6CD88721BD06AF00930A67 /* ElastosSDKWalletBridge.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE6CD88521BD06AF00930A67 /* ElastosSDKWalletBridge.hpp */; };
-		DED52562218DF4C800619F59 /* Elastos_SDK_Wallet.h in Headers */ = {isa = PBXBuildFile; fileRef = DED52560218DF4C800619F59 /* Elastos_SDK_Wallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DED52562218DF4C800619F59 /* ElastosSDKWallet.h in Headers */ = {isa = PBXBuildFile; fileRef = DED52560218DF4C800619F59 /* ElastosSDKWallet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEDB2488218DF5F300F07F42 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB2485218DF5F200F07F42 /* StringExtension.swift */; };
 		DEDB2489218DF5F300F07F42 /* ElastosSDKWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB2486218DF5F200F07F42 /* ElastosSDKWallet.swift */; };
 		DEDB2496218DF71C00F07F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB2495218DF71C00F07F42 /* AppDelegate.swift */; };
@@ -39,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DE52CF0721915A9C002C2177 /* ElastosSDKWallet.framework in Embed Frameworks */,
+				DE52CF0721915A9C002C2177 /* Elastos.SDK.Wallet.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,8 +50,8 @@
 		DE6CD88221BD04BE00930A67 /* Elastos.SDK.Wallet.C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elastos.SDK.Wallet.C.framework; path = frameworks/Elastos.SDK.Wallet.C.framework; sourceTree = "<group>"; };
 		DE6CD88421BD06AF00930A67 /* ElastosSDKWalletBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ElastosSDKWalletBridge.cpp; sourceTree = "<group>"; };
 		DE6CD88521BD06AF00930A67 /* ElastosSDKWalletBridge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ElastosSDKWalletBridge.hpp; sourceTree = "<group>"; };
-		DED5255D218DF4C800619F59 /* ElastosSDKWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElastosSDKWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DED52560218DF4C800619F59 /* Elastos_SDK_Wallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Elastos_SDK_Wallet.h; sourceTree = "<group>"; };
+		DED5255D218DF4C800619F59 /* Elastos.SDK.Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elastos.SDK.Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED52560218DF4C800619F59 /* ElastosSDKWallet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElastosSDKWallet.h; sourceTree = "<group>"; };
 		DED52561218DF4C800619F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDB2484218DF5F200F07F42 /* Elastos.SDK.Wallet-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Elastos.SDK.Wallet-Bridging-Header.h"; sourceTree = "<group>"; };
 		DEDB2485218DF5F200F07F42 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		DED5255E218DF4C800619F59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DED5255D218DF4C800619F59 /* ElastosSDKWallet.framework */,
+				DED5255D218DF4C800619F59 /* Elastos.SDK.Wallet.framework */,
 				DEDB2493218DF71C00F07F42 /* test.app */,
 			);
 			name = Products;
@@ -111,7 +111,7 @@
 				DE6CD88521BD06AF00930A67 /* ElastosSDKWalletBridge.hpp */,
 				DEDB2486218DF5F200F07F42 /* ElastosSDKWallet.swift */,
 				DEDB2485218DF5F200F07F42 /* StringExtension.swift */,
-				DED52560218DF4C800619F59 /* Elastos_SDK_Wallet.h */,
+				DED52560218DF4C800619F59 /* ElastosSDKWallet.h */,
 				DED52561218DF4C800619F59 /* Info.plist */,
 			);
 			path = lib;
@@ -147,7 +147,7 @@
 			files = (
 				DE6CD88721BD06AF00930A67 /* ElastosSDKWalletBridge.hpp in Headers */,
 				DE3300EE218E780400B22FCB /* ElastosSDKWallet.swift in Headers */,
-				DED52562218DF4C800619F59 /* Elastos_SDK_Wallet.h in Headers */,
+				DED52562218DF4C800619F59 /* ElastosSDKWallet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +169,7 @@
 			);
 			name = lib;
 			productName = Elastos.ORG.Wallet.Lib;
-			productReference = DED5255D218DF4C800619F59 /* ElastosSDKWallet.framework */;
+			productReference = DED5255D218DF4C800619F59 /* Elastos.SDK.Wallet.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DEDB2492218DF71C00F07F42 /* test */ = {
@@ -355,6 +355,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -412,6 +413,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -439,6 +441,7 @@
 					"$(PROJECT_DIR)/frameworks",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
+				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = "$(SRCROOT)/lib/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -449,7 +452,8 @@
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = org.elastos.sdk.wallet;
-				PRODUCT_NAME = ElastosSDKWallet;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Elastos.SDK.Wallet;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "lib/Elastos.SDK.Wallet-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -477,6 +481,7 @@
 					"$(PROJECT_DIR)/frameworks",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
+				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = "$(SRCROOT)/lib/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -487,7 +492,8 @@
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = org.elastos.sdk.wallet;
-				PRODUCT_NAME = ElastosSDKWallet;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Elastos.SDK.Wallet;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "lib/Elastos.SDK.Wallet-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

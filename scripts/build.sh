@@ -7,7 +7,7 @@ SCRIPT_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd);
 PROJECT_DIR=$(dirname "${SCRIPT_DIR}");
 BUILD_NAME="$PROJECT_DIR/build";
 
-PROJECT_NAME="ElastosSDKWallet";
+PROJECT_NAME="Elastos.SDK.Wallet";
 PROJECT_BUILDTYPE="Release";
 
 TARGET_PATH="$BUILD_NAME/${PROJECT_NAME}.framework";
