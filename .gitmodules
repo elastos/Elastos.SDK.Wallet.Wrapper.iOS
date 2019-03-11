@@ -1,0 +1,4 @@
+[submodule "depends/Elastos.SDK.Wallet.C"]
+	path = depends/Elastos.SDK.Wallet.C
+	url = https://github.com/elastos/Elastos.SDK.Wallet.C.git
+	
