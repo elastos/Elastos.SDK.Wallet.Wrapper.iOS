@@ -17,4 +17,3 @@ rm -rf "$PROJECT_DIR/frameworks";
 mkdir "$PROJECT_DIR/frameworks";
 
 cp -rv "$DEPENDS_DIR/Elastos.SDK.Wallet.C/build/package/Elastos.SDK.Wallet.C.framework" "$PROJECT_DIR/frameworks";
-

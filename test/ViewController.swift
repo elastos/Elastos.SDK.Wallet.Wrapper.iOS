@@ -8,7 +8,7 @@
 
 import UIKit
 
-import ElastosSDKWallet
+import ElastosSdkWallet
 
 class ViewController: UIViewController {
 
@@ -16,14 +16,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    ElastosSDKWallet.test()
-    let mnemonic = "hobby theme load okay village inhale garlic box cement draft patrol net"
-    
-    var seed = Data()
-    
-    let seedStr = seed.hexEncodedString()
-    
-    let a = 0
+    var mnemonic = ElastosWallet.GenerateMnemonic(language: "english", words: "")
   }
 
 

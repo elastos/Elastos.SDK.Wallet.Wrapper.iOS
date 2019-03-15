@@ -1,1 +1,0 @@
-# Elastos.SDK.Wallet.iOS
