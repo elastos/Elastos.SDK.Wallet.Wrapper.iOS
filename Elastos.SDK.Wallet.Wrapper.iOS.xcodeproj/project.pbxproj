@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1B99ED223DD78800E553F5 /* ja-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */; };
+		4B1B99EE223DD78800E553F5 /* en-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */; };
+		4B1B99EF223DD78800E553F5 /* es-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */; };
+		4B1B99F0223DD78800E553F5 /* fr-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */; };
+		4B1B99F1223DD78800E553F5 /* zh-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */; };
 		DE3300EE218E780400B22FCB /* ElastosWallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB2486218DF5F200F07F42 /* ElastosWallet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE38CF6821F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */; };
 		DE52CF0621915A9C002C2177 /* ElastosSdkWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* ElastosSdkWallet.framework */; };
@@ -50,6 +55,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ja-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/ja-BIP39Words.txt"; sourceTree = "<group>"; };
+		4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/en-BIP39Words.txt"; sourceTree = "<group>"; };
+		4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "es-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/es-BIP39Words.txt"; sourceTree = "<group>"; };
+		4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fr-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/fr-BIP39Words.txt"; sourceTree = "<group>"; };
+		4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "zh-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/zh-BIP39Words.txt"; sourceTree = "<group>"; };
 		DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elastos.SDK.Wallet.C.framework; path = frameworks/Elastos.SDK.Wallet.C.framework; sourceTree = "<group>"; };
 		DE9BBB7E223B4F92003D77CE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DED323E121D5E8D000A24E15 /* AbstractLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractLayer.cpp; sourceTree = "<group>"; };
@@ -91,6 +101,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1B99E7223DD77100E553F5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */,
+				4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */,
+				4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */,
+				4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */,
+				4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		DED323E021D5E8C200A24E15 /* AbstractLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +167,7 @@
 		DEDB2494218DF71C00F07F42 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				4B1B99E7223DD77100E553F5 /* Data */,
 				DEDB2495218DF71C00F07F42 /* AppDelegate.swift */,
 				DEDB2497218DF71C00F07F42 /* ViewController.swift */,
 				DEDB2499218DF71C00F07F42 /* Main.storyboard */,
@@ -259,7 +282,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1B99EF223DD78800E553F5 /* es-BIP39Words.txt in Resources */,
+				4B1B99EE223DD78800E553F5 /* en-BIP39Words.txt in Resources */,
 				DEDB24A0218DF71D00F07F42 /* LaunchScreen.storyboard in Resources */,
+				4B1B99F0223DD78800E553F5 /* fr-BIP39Words.txt in Resources */,
+				4B1B99F1223DD78800E553F5 /* zh-BIP39Words.txt in Resources */,
+				4B1B99ED223DD78800E553F5 /* ja-BIP39Words.txt in Resources */,
 				DEDB249D218DF71D00F07F42 /* Assets.xcassets in Resources */,
 				DEDB249B218DF71C00F07F42 /* Main.storyboard in Resources */,
 			);
@@ -284,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Building depends libraries...\";\n#./scripts/build-depends.sh;\n";
+			shellScript = "echo \"Building depends libraries...\";\n./scripts/build-depends.sh;\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
