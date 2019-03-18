@@ -15,6 +15,7 @@ char* copyStr2Buf(std::string orgStr){
     char* ret = nullptr;
     int nLen = (int)orgStr.length()+1;
     ret = (char*)malloc(nLen);
+    memset(ret, 0, nLen);
     orgStr.copy(ret,nLen,0);
     
     return ret;
@@ -80,7 +81,7 @@ char* AbstractLayer_IdentityManager_GetSignInfo(const char* path,const char* url
         return nullptr;
     }
     
-    std::string info = Did->SetInfo(seed, jsonData, HDWallet);
+    std::string info = Did->SignInfo(seed, jsonData);
     ret = copyStr2Buf(info);
     
     return ret;

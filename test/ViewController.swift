@@ -30,7 +30,12 @@ class ViewController: UIViewController {
     let JsonData = "[{\"Key\":\"" + appid + "/nickName\", \"Value\":\"bob\"}]"
     
     let signInfo = ElastosWallet.GetSignInfo(path: path, url: url, seed: seed, jsonData: JsonData)
+    
+    
+    print("info is start ...:\n")
     print(signInfo ?? "")
+    
+    print("info is end ...:\n")
     
     
     print("end call sdk")
