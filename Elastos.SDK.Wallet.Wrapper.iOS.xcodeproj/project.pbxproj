@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE3300EE218E780400B22FCB /* ElastosWallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB2486218DF5F200F07F42 /* ElastosWallet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE33102C22409A03009C412D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE33102B22409A03009C412D /* libsqlite3.tbd */; };
 		DE38CF6821F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */; };
 		DE52CF0621915A9C002C2177 /* ElastosSdkWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* ElastosSdkWallet.framework */; };
 		DE52CF0721915A9C002C2177 /* ElastosSdkWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* ElastosSdkWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE33102B22409A03009C412D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elastos.SDK.Wallet.C.framework; path = frameworks/Elastos.SDK.Wallet.C.framework; sourceTree = "<group>"; };
 		DE9BBB7E223B4F92003D77CE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DED323E121D5E8D000A24E15 /* AbstractLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractLayer.cpp; sourceTree = "<group>"; };
@@ -75,8 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE38CF6821F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework in Frameworks */,
 				DE9BBB7F223B4F92003D77CE /* libz.tbd in Frameworks */,
+				DE33102C22409A03009C412D /* libsqlite3.tbd in Frameworks */,
+				DE38CF6821F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +139,7 @@
 		DEDB248A218DF66900F07F42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE33102B22409A03009C412D /* libsqlite3.tbd */,
 				DE9BBB7E223B4F92003D77CE /* libz.tbd */,
 				DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */,
 			);
@@ -284,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Building depends libraries...\";\n#./scripts/build-depends.sh;\n";
+			shellScript = "echo \"Building depends libraries...\";\n./scripts/build-depends.sh;\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
