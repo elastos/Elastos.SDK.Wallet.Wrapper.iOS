@@ -66,6 +66,22 @@ open class AbstractLayer {
             
         }
         
+        public static func GetInfo(path:String,seed:String,key:String) -> String?{
+            
+            //
+            let pathPtr = String.ToUnsafeMutablePointer(data: path)
+            let seedPtr = String.ToUnsafeMutablePointer(data: seed)
+            let keyPtr = String.ToUnsafeMutablePointer(data: key)
+            
+            let infoPtr = AbstractLayer_IdentityManager_GetInfo(pathPtr,seedPtr,keyPtr)
+            let info = String.FromUnsafeMutablePointer(data: infoPtr)
+            
+            AbstractLayer_IdentityManager_FreeBuf(infoPtr)
+            
+            return info;
+            
+        }
+        
         
     }
     

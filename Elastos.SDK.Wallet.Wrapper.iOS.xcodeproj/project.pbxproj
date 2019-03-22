@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Building depends libraries...\";\n./scripts/build-depends.sh;\n";
+			shellScript = "echo \"Building depends libraries...\";\n#./scripts/build-depends.sh;\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

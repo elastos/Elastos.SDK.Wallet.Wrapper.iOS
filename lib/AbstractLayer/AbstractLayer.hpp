@@ -19,6 +19,9 @@ extern "C" {
     char* AbstractLayer_IdentityManager_GetMnemonic(const char* language, const char* words);
     char* AbstractLayer_IdentityManager_GetSeed(const char*mnemonic,const char* language,const char* words,const char* mnemonicPassword);
     char* AbstractLayer_IdentityManager_GetSignInfo(const char* path,const char* url,const char* mnemonic,const char* jsonData);
+
+    char* AbstractLayer_IdentityManager_GetInfo(const char* path,const char* seed,const char* key);
+    
     
     void AbstractLayer_IdentityManager_FreeBuf(void*);
     

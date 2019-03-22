@@ -87,3 +87,42 @@ char* AbstractLayer_IdentityManager_GetSignInfo(const char* path,const char* url
     return ret;
 }
 
+
+char* AbstractLayer_IdentityManager_GetInfo(const char* path,const char* seed,const char* key){
+    
+    char* ret = nullptr;
+    
+    //create identity object
+    std::shared_ptr<elastos::Identity> Identity;
+    int nRet = elastos::IdentityManager::CreateIdentity(path, &Identity);
+    if(nRet != 0){
+        return nullptr;
+    }
+    
+    //create DID manager
+    std::shared_ptr<elastos::DidManager> DidManager;
+    nRet = Identity->CreateDidManager(seed, &DidManager);
+    if(nRet != 0){
+        return nullptr;
+    }
+    
+    //create DID
+    std::shared_ptr<elastos::Did> Did;
+    nRet = DidManager->CreateDid(0, &Did);
+    if(nRet != 0){
+        return nullptr;
+    }
+    
+    nRet = Did->SyncInfo();
+    if(nRet < 0){
+        return nullptr;
+    }
+    
+    
+    std::string info = Did->GetInfo(key);
+    ret = copyStr2Buf(info);
+    
+    return ret;
+}
+
+

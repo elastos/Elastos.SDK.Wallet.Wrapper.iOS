@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class ElastosWallet  {
+open class ElastosWalletSDK  {
     private init() {}
     
     private static let Ela_Language = ["zh":"chinese","es":"spanish","en":"english","fr":"french","ja":"japanese"]
@@ -44,6 +44,14 @@ open class ElastosWallet  {
         //Get SignInfo
         let signInfo = AbstractLayer.IdentityManager.GetSignInfo(path:path,url:url,seed:seed,jsonData:jsonData)
         return signInfo
+        
+    }
+    
+    public static func GetInfo(path:String,seed:String,key:String) ->String? {
+        
+        //Get SignInfo
+        let info = AbstractLayer.IdentityManager.GetInfo(path:path,seed:seed,key:key)
+        return info
         
     }
     
