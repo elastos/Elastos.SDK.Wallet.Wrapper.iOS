@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B1B99ED223DD78800E553F5 /* ja-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */; };
-		4B1B99EE223DD78800E553F5 /* en-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */; };
-		4B1B99EF223DD78800E553F5 /* es-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */; };
-		4B1B99F0223DD78800E553F5 /* fr-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */; };
-		4B1B99F1223DD78800E553F5 /* zh-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */; };
+		4BA61EC52245E2D60038B669 /* fr-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BA61EC02245E2D60038B669 /* fr-BIP39Words.txt */; };
+		4BA61EC62245E2D60038B669 /* en-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BA61EC12245E2D60038B669 /* en-BIP39Words.txt */; };
+		4BA61EC72245E2D60038B669 /* es-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BA61EC22245E2D60038B669 /* es-BIP39Words.txt */; };
+		4BA61EC82245E2D60038B669 /* ja-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BA61EC32245E2D60038B669 /* ja-BIP39Words.txt */; };
+		4BA61EC92245E2D60038B669 /* zh-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BA61EC42245E2D60038B669 /* zh-BIP39Words.txt */; };
 		DE3300EE218E780400B22FCB /* ElastosWallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB2486218DF5F200F07F42 /* ElastosWallet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE33102C22409A03009C412D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE33102B22409A03009C412D /* libsqlite3.tbd */; };
 		DE38CF6821F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */; };
@@ -56,11 +56,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ja-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/ja-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/en-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "es-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/es-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fr-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/fr-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "zh-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/zh-BIP39Words.txt"; sourceTree = "<group>"; };
+		4BA61EC02245E2D60038B669 /* fr-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "fr-BIP39Words.txt"; sourceTree = "<group>"; };
+		4BA61EC12245E2D60038B669 /* en-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "en-BIP39Words.txt"; sourceTree = "<group>"; };
+		4BA61EC22245E2D60038B669 /* es-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "es-BIP39Words.txt"; sourceTree = "<group>"; };
+		4BA61EC32245E2D60038B669 /* ja-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ja-BIP39Words.txt"; sourceTree = "<group>"; };
+		4BA61EC42245E2D60038B669 /* zh-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zh-BIP39Words.txt"; sourceTree = "<group>"; };
 		DE33102B22409A03009C412D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elastos.SDK.Wallet.C.framework; path = frameworks/Elastos.SDK.Wallet.C.framework; sourceTree = "<group>"; };
 		DE9BBB7E223B4F92003D77CE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -107,11 +107,11 @@
 		4B1B99E7223DD77100E553F5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */,
-				4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */,
-				4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */,
-				4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */,
-				4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */,
+				4BA61EC12245E2D60038B669 /* en-BIP39Words.txt */,
+				4BA61EC22245E2D60038B669 /* es-BIP39Words.txt */,
+				4BA61EC02245E2D60038B669 /* fr-BIP39Words.txt */,
+				4BA61EC32245E2D60038B669 /* ja-BIP39Words.txt */,
+				4BA61EC42245E2D60038B669 /* zh-BIP39Words.txt */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -286,13 +286,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1B99EF223DD78800E553F5 /* es-BIP39Words.txt in Resources */,
-				4B1B99EE223DD78800E553F5 /* en-BIP39Words.txt in Resources */,
+				4BA61EC72245E2D60038B669 /* es-BIP39Words.txt in Resources */,
+				4BA61EC82245E2D60038B669 /* ja-BIP39Words.txt in Resources */,
+				4BA61EC62245E2D60038B669 /* en-BIP39Words.txt in Resources */,
 				DEDB24A0218DF71D00F07F42 /* LaunchScreen.storyboard in Resources */,
-				4B1B99F0223DD78800E553F5 /* fr-BIP39Words.txt in Resources */,
-				4B1B99F1223DD78800E553F5 /* zh-BIP39Words.txt in Resources */,
-				4B1B99ED223DD78800E553F5 /* ja-BIP39Words.txt in Resources */,
+				4BA61EC92245E2D60038B669 /* zh-BIP39Words.txt in Resources */,
 				DEDB249D218DF71D00F07F42 /* Assets.xcassets in Resources */,
+				4BA61EC52245E2D60038B669 /* fr-BIP39Words.txt in Resources */,
 				DEDB249B218DF71C00F07F42 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
