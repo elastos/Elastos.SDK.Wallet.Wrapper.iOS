@@ -16,49 +16,73 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    print("star call sdk")
-    let mnemonic = ElastosWalletSDK.GenerateMnemonic(language:"zh")
-    print(mnemonic )
-    
-    let seed = ElastosWalletSDK.GenerateSeed(mnemonic: mnemonic,language:"zh")
-    print(seed)
-    
-    //Get SignInfo
-    let path = NSHomeDirectory()
-    let url = "https://api-wallet-ela-testnet.elastos.org"
-    let appid  = "fe2dad7890d9cf301be581d5db5ad23a5efac604a9bc6a1ed3d15b24b4782d8da78b5b09eb80134209fd536505658fa151f685a50627b4f32bda209e967fc44a"
-    
-    let JsonData = "[{\"Key\":\"" + appid + "/nickName\", \"Value\":\"bob\"}]"
-    
-    let signInfo = ElastosWalletSDK.GetSignInfo(path: path, url: url, seed: seed, jsonData: JsonData)
-    
-    
-    print("sign info is start ...:\n")
-    print(signInfo ?? "")
-    
-    
-    //Write info
-    
-    
-    
-    
-    
-    
-    //Get getInfo
-    let key = "DID/Publickey"
-    let info = ElastosWalletSDK.GetInfo(path: path, seed: seed, key: key)
-    print("info is start ...:\n")
-    print(info ?? "")
-    print("info is end ...:\n")
-    
-    
-    print("end call sdk")
-    
-    
-    
-    
+    testGenrateMnemonic()
+    testSingleWallet()
+    testDid()
   }
 
+  private func testGenrateMnemonic() -> String? {
+    return elastos.IdentityManager.GetMnemonic(language: "english", words: "")
+  }
+
+  private func testSingleWallet() {
+    let mnemonic: String? = "echo lounge olive vessel false bulk purse fitness pull luggage acquire audit"
+    print("mnemonic: \(mnemonic!)")
+    let seed = elastos.IdentityManager.GetSeed(mnemonic: mnemonic!, language: "english", words: "", mnemonicPassword: "")
+    print("seed: \(seed!)")
+    
+    let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
+    let cachesDir = paths[0]
+    let identity = elastos.IdentityManager.CreateIdentity(localPath: cachesDir);
+    
+    let node = elastos.BlockChainNode(url: "https://api-wallet-ela-testnet.elastos.org")
+    let singleWallet = identity.createSingleAddressWallet(seed: seed!, node: node)
+    
+    singleWallet.syncHistory();
+    
+    let address = singleWallet.getAddress(chain: 0, index: 0);
+    print("address: \(address!)");
+    
+    let balance = singleWallet.getBalance(address: "EdVgb5RTdmwKf79pEUdVNnFprWyvmr1hPc");
+    print("balance: \(balance)");
+  }
+  
+  private func testDid() {
+    let mnemonic = testGenrateMnemonic()
+    print("mnemonic: \(mnemonic!)")
+    let seed = elastos.IdentityManager.GetSeed(mnemonic: mnemonic!, language: "english", words: "", mnemonicPassword: "")
+    print("seed: \(seed)")
+    
+    let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
+    let cachesDir = paths[0]
+    let identity = elastos.IdentityManager.CreateIdentity(localPath: cachesDir);
+    
+    let node = elastos.BlockChainNode(url: "https://api-wallet-did-testnet.elastos.org")
+    let singleWallet = identity.createSingleAddressWallet(seed: seed!, node: node)
+    singleWallet.syncHistory()
+    let address = singleWallet.getAddress(chain: 0, index: 0)
+    print("address: \(address)")
+    let balance = singleWallet.getBalance(address: "EdVgb5RTdmwKf79pEUdVNnFprWyvmr1hPc")
+    print("balance: \(balance)")
+  
+    let didManager = identity.createDidManager(seed: seed!)
+    let did = didManager.createDid(index: 0)
+    
+    let id = did.getId()
+    print("id: \(id)")
+    
+    let json = "[{\"Key\": \"name\", \"Value\":\"bob\"}]"
+    let info = did.signInfo(seed: seed!, json: json)
+    print("signedInfo: \(info)")
+  
+    let txid = did.setInfo(seed: seed!, json: json, wallet: singleWallet);
+    print("set did info: \(txid)")
+  
+    did.syncInfo();
+  
+    let value = did.getInfo(key: "name");
+    print("get did info: name=\(value)")
+  }
 
 }
 

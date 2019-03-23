@@ -44,3 +44,20 @@ extension Data {
     return Data(bytes: data!, count: Int(size))
   }
 }
+
+extension Array {
+  static func ToUnsafeMutablePointer(data: [Element]?) -> UnsafeMutablePointer<Element>? {
+    guard data != nil else { return nil }
+
+    let unsafePointer = UnsafeMutablePointer<Element>.allocate(capacity: data!.count)
+    unsafePointer.initialize(from: data!, count: data!.count)
+    
+    let opaquePtr = OpaquePointer(unsafePointer)
+
+    return UnsafeMutablePointer<Element>(opaquePtr)
+  }
+  static func FromUnsafeMutablePointer(data: UnsafeMutablePointer<Element>?, size: Int) -> [Element]? {
+    guard data != nil else { return nil }
+    return Array<Element>.FromUnsafeMutablePointer(data: data, size: size)
+  }
+}

@@ -21,6 +21,11 @@ char* copyStr2Buf(std::string orgStr){
     return ret;
 }
 
+void AbstractLayer_FreeBuf(void* buf)
+{
+  free(buf);
+}
+
 void AbstractLayer_IdentityManager_FreeBuf(void* buf)
 {
     free(buf);

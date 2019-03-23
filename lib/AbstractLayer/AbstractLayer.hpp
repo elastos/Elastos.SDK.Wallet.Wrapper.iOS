@@ -21,10 +21,10 @@ extern "C" {
     char* AbstractLayer_IdentityManager_GetSignInfo(const char* path,const char* url,const char* mnemonic,const char* jsonData);
 
     char* AbstractLayer_IdentityManager_GetInfo(const char* path,const char* seed,const char* key);
-    
-    
     void AbstractLayer_IdentityManager_FreeBuf(void*);
-    
+
+    void AbstractLayer_FreeBuf(void*);
+  
 #ifdef __cplusplus
 }
 #endif

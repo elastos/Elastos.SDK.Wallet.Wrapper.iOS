@@ -7,13 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B1B99ED223DD78800E553F5 /* ja-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */; };
-		4B1B99EE223DD78800E553F5 /* en-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */; };
-		4B1B99EF223DD78800E553F5 /* es-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */; };
-		4B1B99F0223DD78800E553F5 /* fr-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */; };
-		4B1B99F1223DD78800E553F5 /* zh-BIP39Words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */; };
 		DE3300EE218E780400B22FCB /* ElastosWallet.swift in Headers */ = {isa = PBXBuildFile; fileRef = DEDB2486218DF5F200F07F42 /* ElastosWallet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE33102C22409A03009C412D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DE33102B22409A03009C412D /* libsqlite3.tbd */; };
+		DE34BF182245CADC00C7B7AE /* WalletBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF172245CADC00C7B7AE /* WalletBase.swift */; };
+		DE34BF1A2245CC5200C7B7AE /* BlockChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF192245CC5200C7B7AE /* BlockChainNode.swift */; };
+		DE34BF1F2245D02100C7B7AE /* AbsLayerBlockChainNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF1D2245D02100C7B7AE /* AbsLayerBlockChainNode.cpp */; };
+		DE34BF202245D02100C7B7AE /* AbsLayerBlockChainNode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF1E2245D02100C7B7AE /* AbsLayerBlockChainNode.hpp */; };
+		DE34BF222245D5D100C7B7AE /* AbsLayerBlockChainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF212245D5D100C7B7AE /* AbsLayerBlockChainNode.swift */; };
+		DE34BF242245DFB700C7B7AE /* IdentityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF232245DFB700C7B7AE /* IdentityManager.swift */; };
+		DE34BF262245DFC600C7B7AE /* AbsLayerIdentityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF252245DFC600C7B7AE /* AbsLayerIdentityManager.swift */; };
+		DE34BF292245DFD500C7B7AE /* AbsLayerIdentityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF272245DFD500C7B7AE /* AbsLayerIdentityManager.cpp */; };
+		DE34BF2A2245DFD500C7B7AE /* AbsLayerIdentityManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF282245DFD500C7B7AE /* AbsLayerIdentityManager.hpp */; };
+		DE34BF2C2245E08800C7B7AE /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF2B2245E08800C7B7AE /* Identity.swift */; };
+		DE34BF2E2245E0A500C7B7AE /* AbsLayerIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF2D2245E0A500C7B7AE /* AbsLayerIdentity.swift */; };
+		DE34BF312245E0B100C7B7AE /* AbsLayerIdentity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF2F2245E0B100C7B7AE /* AbsLayerIdentity.cpp */; };
+		DE34BF322245E0B100C7B7AE /* AbsLayerIdentity.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF302245E0B100C7B7AE /* AbsLayerIdentity.hpp */; };
+		DE34BF342245F74200C7B7AE /* AbsLayerHDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF332245F74200C7B7AE /* AbsLayerHDWallet.swift */; };
+		DE34BF372245F75500C7B7AE /* AbsLayerHDWallet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF352245F75500C7B7AE /* AbsLayerHDWallet.cpp */; };
+		DE34BF382245F75500C7B7AE /* AbsLayerHDWallet.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF362245F75500C7B7AE /* AbsLayerHDWallet.hpp */; };
+		DE34BF3A2245F77400C7B7AE /* HDWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF392245F77400C7B7AE /* HDWallet.swift */; };
+		DE34BF3C224611F800C7B7AE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF3B224611F800C7B7AE /* Transaction.swift */; };
+		DE34BF3E2246120700C7B7AE /* AbsLayerTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF3D2246120700C7B7AE /* AbsLayerTransaction.swift */; };
+		DE34BF412246121300C7B7AE /* AbsLayerTransaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF3F2246121300C7B7AE /* AbsLayerTransaction.cpp */; };
+		DE34BF422246121300C7B7AE /* AbsLayerTransaction.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF402246121300C7B7AE /* AbsLayerTransaction.hpp */; };
+		DE34BF4422461A5200C7B7AE /* Did.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF4322461A5200C7B7AE /* Did.swift */; };
+		DE34BF4722461AA200C7B7AE /* AbsLayerDid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF4522461AA200C7B7AE /* AbsLayerDid.cpp */; };
+		DE34BF4822461AA200C7B7AE /* AbsLayerDid.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF4622461AA200C7B7AE /* AbsLayerDid.hpp */; };
+		DE34BF4A22461AAF00C7B7AE /* AbsLayerDid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF4922461AAF00C7B7AE /* AbsLayerDid.swift */; };
+		DE34BF4C22461FD000C7B7AE /* DidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF4B22461FD000C7B7AE /* DidManager.swift */; };
+		DE34BF4F22461FE300C7B7AE /* AbsLayerDidManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF4D22461FE300C7B7AE /* AbsLayerDidManager.cpp */; };
+		DE34BF5022461FE300C7B7AE /* AbsLayerDidManager.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DE34BF4E22461FE300C7B7AE /* AbsLayerDidManager.hpp */; };
+		DE34BF5222461FF000C7B7AE /* AbsLayerDidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE34BF5122461FF000C7B7AE /* AbsLayerDidManager.swift */; };
 		DE38CF6821F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */; };
 		DE52CF0621915A9C002C2177 /* ElastosSdkWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* ElastosSdkWallet.framework */; };
 		DE52CF0721915A9C002C2177 /* ElastosSdkWallet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DED5255D218DF4C800619F59 /* ElastosSdkWallet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -56,12 +80,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "ja-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/ja-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "en-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/en-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "es-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/es-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "fr-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/fr-BIP39Words.txt"; sourceTree = "<group>"; };
-		4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "zh-BIP39Words.txt"; path = "../../../Elastos.SDK.Keypair.Wrapper.iOS/lib/Data/zh-BIP39Words.txt"; sourceTree = "<group>"; };
 		DE33102B22409A03009C412D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DE34BF172245CADC00C7B7AE /* WalletBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBase.swift; sourceTree = "<group>"; };
+		DE34BF192245CC5200C7B7AE /* BlockChainNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChainNode.swift; sourceTree = "<group>"; };
+		DE34BF1D2245D02100C7B7AE /* AbsLayerBlockChainNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerBlockChainNode.cpp; sourceTree = "<group>"; };
+		DE34BF1E2245D02100C7B7AE /* AbsLayerBlockChainNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerBlockChainNode.hpp; sourceTree = "<group>"; };
+		DE34BF212245D5D100C7B7AE /* AbsLayerBlockChainNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerBlockChainNode.swift; sourceTree = "<group>"; };
+		DE34BF232245DFB700C7B7AE /* IdentityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityManager.swift; sourceTree = "<group>"; };
+		DE34BF252245DFC600C7B7AE /* AbsLayerIdentityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerIdentityManager.swift; sourceTree = "<group>"; };
+		DE34BF272245DFD500C7B7AE /* AbsLayerIdentityManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerIdentityManager.cpp; sourceTree = "<group>"; };
+		DE34BF282245DFD500C7B7AE /* AbsLayerIdentityManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerIdentityManager.hpp; sourceTree = "<group>"; };
+		DE34BF2B2245E08800C7B7AE /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		DE34BF2D2245E0A500C7B7AE /* AbsLayerIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerIdentity.swift; sourceTree = "<group>"; };
+		DE34BF2F2245E0B100C7B7AE /* AbsLayerIdentity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerIdentity.cpp; sourceTree = "<group>"; };
+		DE34BF302245E0B100C7B7AE /* AbsLayerIdentity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerIdentity.hpp; sourceTree = "<group>"; };
+		DE34BF332245F74200C7B7AE /* AbsLayerHDWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerHDWallet.swift; sourceTree = "<group>"; };
+		DE34BF352245F75500C7B7AE /* AbsLayerHDWallet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerHDWallet.cpp; sourceTree = "<group>"; };
+		DE34BF362245F75500C7B7AE /* AbsLayerHDWallet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerHDWallet.hpp; sourceTree = "<group>"; };
+		DE34BF392245F77400C7B7AE /* HDWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDWallet.swift; sourceTree = "<group>"; };
+		DE34BF3B224611F800C7B7AE /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		DE34BF3D2246120700C7B7AE /* AbsLayerTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerTransaction.swift; sourceTree = "<group>"; };
+		DE34BF3F2246121300C7B7AE /* AbsLayerTransaction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerTransaction.cpp; sourceTree = "<group>"; };
+		DE34BF402246121300C7B7AE /* AbsLayerTransaction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerTransaction.hpp; sourceTree = "<group>"; };
+		DE34BF4322461A5200C7B7AE /* Did.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Did.swift; sourceTree = "<group>"; };
+		DE34BF4522461AA200C7B7AE /* AbsLayerDid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerDid.cpp; sourceTree = "<group>"; };
+		DE34BF4622461AA200C7B7AE /* AbsLayerDid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerDid.hpp; sourceTree = "<group>"; };
+		DE34BF4922461AAF00C7B7AE /* AbsLayerDid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerDid.swift; sourceTree = "<group>"; };
+		DE34BF4B22461FD000C7B7AE /* DidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidManager.swift; sourceTree = "<group>"; };
+		DE34BF4D22461FE300C7B7AE /* AbsLayerDidManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbsLayerDidManager.cpp; sourceTree = "<group>"; };
+		DE34BF4E22461FE300C7B7AE /* AbsLayerDidManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsLayerDidManager.hpp; sourceTree = "<group>"; };
+		DE34BF5122461FF000C7B7AE /* AbsLayerDidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsLayerDidManager.swift; sourceTree = "<group>"; };
 		DE38CF6721F5BD1700639F6B /* Elastos.SDK.Wallet.C.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Elastos.SDK.Wallet.C.framework; path = frameworks/Elastos.SDK.Wallet.C.framework; sourceTree = "<group>"; };
 		DE9BBB7E223B4F92003D77CE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DED323E121D5E8D000A24E15 /* AbstractLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractLayer.cpp; sourceTree = "<group>"; };
@@ -107,11 +155,6 @@
 		4B1B99E7223DD77100E553F5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4B1B99E9223DD78800E553F5 /* en-BIP39Words.txt */,
-				4B1B99EA223DD78800E553F5 /* es-BIP39Words.txt */,
-				4B1B99EB223DD78800E553F5 /* fr-BIP39Words.txt */,
-				4B1B99E8223DD78800E553F5 /* ja-BIP39Words.txt */,
-				4B1B99EC223DD78800E553F5 /* zh-BIP39Words.txt */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -122,6 +165,27 @@
 				DED323E121D5E8D000A24E15 /* AbstractLayer.cpp */,
 				DED323E221D5E8D000A24E15 /* AbstractLayer.hpp */,
 				DED323E521D5E94300A24E15 /* AbstractLayer.swift */,
+				DE34BF3F2246121300C7B7AE /* AbsLayerTransaction.cpp */,
+				DE34BF402246121300C7B7AE /* AbsLayerTransaction.hpp */,
+				DE34BF3D2246120700C7B7AE /* AbsLayerTransaction.swift */,
+				DE34BF1D2245D02100C7B7AE /* AbsLayerBlockChainNode.cpp */,
+				DE34BF1E2245D02100C7B7AE /* AbsLayerBlockChainNode.hpp */,
+				DE34BF212245D5D100C7B7AE /* AbsLayerBlockChainNode.swift */,
+				DE34BF2F2245E0B100C7B7AE /* AbsLayerIdentity.cpp */,
+				DE34BF302245E0B100C7B7AE /* AbsLayerIdentity.hpp */,
+				DE34BF2D2245E0A500C7B7AE /* AbsLayerIdentity.swift */,
+				DE34BF272245DFD500C7B7AE /* AbsLayerIdentityManager.cpp */,
+				DE34BF282245DFD500C7B7AE /* AbsLayerIdentityManager.hpp */,
+				DE34BF252245DFC600C7B7AE /* AbsLayerIdentityManager.swift */,
+				DE34BF352245F75500C7B7AE /* AbsLayerHDWallet.cpp */,
+				DE34BF362245F75500C7B7AE /* AbsLayerHDWallet.hpp */,
+				DE34BF332245F74200C7B7AE /* AbsLayerHDWallet.swift */,
+				DE34BF4522461AA200C7B7AE /* AbsLayerDid.cpp */,
+				DE34BF4622461AA200C7B7AE /* AbsLayerDid.hpp */,
+				DE34BF4922461AAF00C7B7AE /* AbsLayerDid.swift */,
+				DE34BF4D22461FE300C7B7AE /* AbsLayerDidManager.cpp */,
+				DE34BF4E22461FE300C7B7AE /* AbsLayerDidManager.hpp */,
+				DE34BF5122461FF000C7B7AE /* AbsLayerDidManager.swift */,
 			);
 			path = AbstractLayer;
 			sourceTree = "<group>";
@@ -154,6 +218,14 @@
 				DEDB2485218DF5F200F07F42 /* StringExtension.swift */,
 				DED52560218DF4C800619F59 /* Elastos.SDK.Wallet.h */,
 				DED52561218DF4C800619F59 /* Info.plist */,
+				DE34BF172245CADC00C7B7AE /* WalletBase.swift */,
+				DE34BF192245CC5200C7B7AE /* BlockChainNode.swift */,
+				DE34BF2B2245E08800C7B7AE /* Identity.swift */,
+				DE34BF232245DFB700C7B7AE /* IdentityManager.swift */,
+				DE34BF392245F77400C7B7AE /* HDWallet.swift */,
+				DE34BF3B224611F800C7B7AE /* Transaction.swift */,
+				DE34BF4322461A5200C7B7AE /* Did.swift */,
+				DE34BF4B22461FD000C7B7AE /* DidManager.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -189,8 +261,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE34BF202245D02100C7B7AE /* AbsLayerBlockChainNode.hpp in Headers */,
+				DE34BF5022461FE300C7B7AE /* AbsLayerDidManager.hpp in Headers */,
+				DE34BF382245F75500C7B7AE /* AbsLayerHDWallet.hpp in Headers */,
 				DED52562218DF4C800619F59 /* Elastos.SDK.Wallet.h in Headers */,
+				DE34BF4822461AA200C7B7AE /* AbsLayerDid.hpp in Headers */,
+				DE34BF2A2245DFD500C7B7AE /* AbsLayerIdentityManager.hpp in Headers */,
+				DE34BF322245E0B100C7B7AE /* AbsLayerIdentity.hpp in Headers */,
 				DED323E421D5E8D000A24E15 /* AbstractLayer.hpp in Headers */,
+				DE34BF422246121300C7B7AE /* AbsLayerTransaction.hpp in Headers */,
 				DE3300EE218E780400B22FCB /* ElastosWallet.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,12 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B1B99EF223DD78800E553F5 /* es-BIP39Words.txt in Resources */,
-				4B1B99EE223DD78800E553F5 /* en-BIP39Words.txt in Resources */,
 				DEDB24A0218DF71D00F07F42 /* LaunchScreen.storyboard in Resources */,
-				4B1B99F0223DD78800E553F5 /* fr-BIP39Words.txt in Resources */,
-				4B1B99F1223DD78800E553F5 /* zh-BIP39Words.txt in Resources */,
-				4B1B99ED223DD78800E553F5 /* ja-BIP39Words.txt in Resources */,
 				DEDB249D218DF71D00F07F42 /* Assets.xcassets in Resources */,
 				DEDB249B218DF71C00F07F42 /* Main.storyboard in Resources */,
 			);
@@ -316,7 +390,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Building depends libraries...\";\n#./scripts/build-depends.sh;\n";
+			shellScript = "echo \"Building depends libraries...\";\n./scripts/build-depends.sh;\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -326,10 +400,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE34BF1F2245D02100C7B7AE /* AbsLayerBlockChainNode.cpp in Sources */,
 				DEDB2489218DF5F300F07F42 /* ElastosWallet.swift in Sources */,
+				DE34BF4A22461AAF00C7B7AE /* AbsLayerDid.swift in Sources */,
+				DE34BF342245F74200C7B7AE /* AbsLayerHDWallet.swift in Sources */,
+				DE34BF5222461FF000C7B7AE /* AbsLayerDidManager.swift in Sources */,
+				DE34BF262245DFC600C7B7AE /* AbsLayerIdentityManager.swift in Sources */,
+				DE34BF2E2245E0A500C7B7AE /* AbsLayerIdentity.swift in Sources */,
 				DED323E321D5E8D000A24E15 /* AbstractLayer.cpp in Sources */,
 				DEDB2488218DF5F300F07F42 /* StringExtension.swift in Sources */,
+				DE34BF3A2245F77400C7B7AE /* HDWallet.swift in Sources */,
+				DE34BF3C224611F800C7B7AE /* Transaction.swift in Sources */,
+				DE34BF1A2245CC5200C7B7AE /* BlockChainNode.swift in Sources */,
 				DED323E621D5E94300A24E15 /* AbstractLayer.swift in Sources */,
+				DE34BF4422461A5200C7B7AE /* Did.swift in Sources */,
+				DE34BF312245E0B100C7B7AE /* AbsLayerIdentity.cpp in Sources */,
+				DE34BF2C2245E08800C7B7AE /* Identity.swift in Sources */,
+				DE34BF412246121300C7B7AE /* AbsLayerTransaction.cpp in Sources */,
+				DE34BF292245DFD500C7B7AE /* AbsLayerIdentityManager.cpp in Sources */,
+				DE34BF242245DFB700C7B7AE /* IdentityManager.swift in Sources */,
+				DE34BF372245F75500C7B7AE /* AbsLayerHDWallet.cpp in Sources */,
+				DE34BF222245D5D100C7B7AE /* AbsLayerBlockChainNode.swift in Sources */,
+				DE34BF182245CADC00C7B7AE /* WalletBase.swift in Sources */,
+				DE34BF4F22461FE300C7B7AE /* AbsLayerDidManager.cpp in Sources */,
+				DE34BF3E2246120700C7B7AE /* AbsLayerTransaction.swift in Sources */,
+				DE34BF4722461AA200C7B7AE /* AbsLayerDid.cpp in Sources */,
+				DE34BF4C22461FD000C7B7AE /* DidManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +474,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -443,7 +539,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
