@@ -53,6 +53,7 @@
 		DEDB249B218DF71C00F07F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDB2499218DF71C00F07F42 /* Main.storyboard */; };
 		DEDB249D218DF71D00F07F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDB249C218DF71D00F07F42 /* Assets.xcassets */; };
 		DEDB24A0218DF71D00F07F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDB249E218DF71D00F07F42 /* LaunchScreen.storyboard */; };
+		DEDF9287224882D80075295F /* bip39words_zh.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEDF9286224882D80075295F /* bip39words_zh.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		DEDB249C218DF71D00F07F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEDB249F218DF71D00F07F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEDB24A1218DF71D00F07F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEDF9286224882D80075295F /* bip39words_zh.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bip39words_zh.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		DED5255F218DF4C800619F59 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				DEDF9281224881C70075295F /* Resources */,
 				DED323E021D5E8C200A24E15 /* AbstractLayer */,
 				DEDB2484218DF5F200F07F42 /* Elastos.SDK.Wallet-Bridging-Header.h */,
 				DEDB2486218DF5F200F07F42 /* ElastosWallet.swift */,
@@ -252,6 +255,22 @@
 				DEDB24A1218DF71D00F07F42 /* Info.plist */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		DEDF9281224881C70075295F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF92882248857B0075295F /* bip39words */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DEDF92882248857B0075295F /* bip39words */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF9286224882D80075295F /* bip39words_zh.txt */,
+			);
+			path = bip39words;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDF9287224882D80075295F /* bip39words_zh.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

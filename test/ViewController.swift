@@ -16,6 +16,11 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
+    
+    let bundle = Bundle(identifier: "org.elastos.sdk.wallet")
+    let path = bundle?.path(forResource: "bip39words_zh", ofType: "txt")
+    
+    
     testGenrateMnemonic()
     testSingleWallet()
     testDid()
