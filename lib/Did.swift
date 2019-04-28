@@ -24,20 +24,20 @@ extension elastos {
       return AbstractLayer.Did.GetId(obj: mObj)
     }
     
-    public func signInfo(seed: String, json: String) -> String? {
-      return AbstractLayer.Did.SignInfo(obj: mObj, seed: seed, json: json)
+    public func signInfo(seed: String, json: String, encrypt: Bool = false) -> String? {
+      return AbstractLayer.Did.SignInfo(obj: mObj, seed: seed, json: json, encrypt: encrypt)
     }
     
-    public func setInfo(seed: String, json: String, wallet: HDWallet) -> String? {
-      return AbstractLayer.Did.SetInfo(obj: mObj, seed: seed, json: json, wallet: wallet.getObject())
+    public func setInfo(seed: String, json: String, wallet: HDWallet, encrypt: Bool = false) -> String? {
+      return AbstractLayer.Did.SetInfo(obj: mObj, seed: seed, json: json, wallet: wallet.getObject(), encrypt: encrypt)
     }
     
     public func syncInfo() {
       AbstractLayer.Did.SyncInfo(obj: mObj)
     }
     
-    public func getInfo(key: String) -> String? {
-      return AbstractLayer.Did.GetInfo(obj: mObj, key: key)
+    public func getInfo(key: String, encrypt: Bool = false, seed: String = "") -> String? {
+      return AbstractLayer.Did.GetInfo(obj: mObj, key: key, encrypt: encrypt, seed: seed)
     }
   }
 }

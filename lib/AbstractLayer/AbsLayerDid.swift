@@ -17,19 +17,19 @@ extension AbstractLayer {
       return id
     }
     
-    public static func SignInfo(obj: Int64, seed: String, json: String) -> String? {
+    public static func SignInfo(obj: Int64, seed: String, json: String, encrypt: Bool = false) -> String? {
       let seedPtr = String.ToUnsafeMutablePointer(data: seed)
       let jsonPtr = String.ToUnsafeMutablePointer(data: json)
-      let signedInfoPtr = AbsLayer_Did_SignInfo(obj, seedPtr, jsonPtr)
+      let signedInfoPtr = AbsLayer_Did_SignInfo(obj, seedPtr, jsonPtr, encrypt)
       let signedInfo = String.FromUnsafeMutablePointer(data: signedInfoPtr)
       AbstractLayer_FreeBuf(signedInfoPtr)
       return signedInfo
     }
     
-    public static func SetInfo(obj: Int64, seed: String, json: String, wallet: Int64) -> String? {
+    public static func SetInfo(obj: Int64, seed: String, json: String, wallet: Int64, encrypt: Bool = false) -> String? {
       let seedPtr = String.ToUnsafeMutablePointer(data: seed)
       let jsonPtr = String.ToUnsafeMutablePointer(data: json)
-      let txidPtr = AbsLayer_Did_SetInfo(obj, seedPtr, jsonPtr, wallet)
+      let txidPtr = AbsLayer_Did_SetInfo(obj, seedPtr, jsonPtr, wallet, encrypt)
       let txid = String.FromUnsafeMutablePointer(data: txidPtr)
       AbstractLayer_FreeBuf(txidPtr)
       return txid
@@ -39,9 +39,10 @@ extension AbstractLayer {
       AbsLayer_Did_SyncInfo(obj)
     }
     
-    public static func GetInfo(obj: Int64, key: String) -> String? {
+    public static func GetInfo(obj: Int64, key: String, encrypt: Bool = false, seed: String = "") -> String? {
       let keyPtr = String.ToUnsafeMutablePointer(data: key)
-      let infoPtr = AbsLayer_Did_GetInfo(obj, keyPtr)
+      let seedPtr = String.ToUnsafeMutablePointer(data: seed)
+      let infoPtr = AbsLayer_Did_GetInfo(obj, keyPtr, encrypt, seedPtr)
       let info = String.FromUnsafeMutablePointer(data: infoPtr)
       AbstractLayer_FreeBuf(infoPtr)
       return info

@@ -77,16 +77,24 @@ class ViewController: UIViewController {
     print("id: \(id)")
     
     let json = "[{\"Key\": \"name\", \"Value\":\"bob\"}]"
-    let info = did.signInfo(seed: seed!, json: json)
+    var info = did.signInfo(seed: seed!, json: json)
+    print("signedInfo: \(info)")
+    
+    info = did.signInfo(seed: seed!, json: json, encrypt: true)
     print("signedInfo: \(info)")
   
-    let txid = did.setInfo(seed: seed!, json: json, wallet: singleWallet);
+    var txid = did.setInfo(seed: seed!, json: json, wallet: singleWallet);
+    print("set did info: \(txid)")
+    
+    txid = did.setInfo(seed: seed!, json: json, wallet: singleWallet, encrypt: true);
     print("set did info: \(txid)")
   
     did.syncInfo();
   
-    let value = did.getInfo(key: "name");
+    var value = did.getInfo(key: "name");
     print("get did info: name=\(value)")
+    
+    value = did.getInfo(key: "name", encrypt: true, seed: "");
   }
 
 }

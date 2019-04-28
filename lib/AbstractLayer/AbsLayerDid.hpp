@@ -16,12 +16,11 @@ extern "C" {
 #endif
 
   char* AbsLayer_Did_GetId(int64_t obj);
-  char* AbsLayer_Did_SignInfo(int64_t obj, const char* seed, const char* json);
-  char* AbsLayer_Did_SetInfo(int64_t obj, const char* seed, const char* json, int64_t wallet);
+  char* AbsLayer_Did_SignInfo(int64_t obj, const char* seed, const char* json, bool encrypt);
+  char* AbsLayer_Did_SetInfo(int64_t obj, const char* seed, const char* json, int64_t wallet, bool encrypt);
   int AbsLayer_Did_SyncInfo(int64_t obj);
-  char* AbsLayer_Did_GetInfo(int64_t obj, const char* key);
+  char* AbsLayer_Did_GetInfo(int64_t obj, const char* key, bool encrypt, const char* seed);
   void AbsLayer_Did_DestroyDid(int64_t obj);
-
   
 #ifdef __cplusplus
 }

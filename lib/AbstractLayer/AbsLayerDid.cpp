@@ -19,19 +19,19 @@ char* AbsLayer_Did_GetId(int64_t obj)
   return idBuf;
 }
 
-char* AbsLayer_Did_SignInfo(int64_t obj, const char* seed, const char* json)
+char* AbsLayer_Did_SignInfo(int64_t obj, const char* seed, const char* json, bool encrypt)
 {
   std::shared_ptr<elastos::Did>* did = reinterpret_cast<std::shared_ptr<elastos::Did>*>(obj);
-  std::string signedInfo = (*did)->SignInfo(seed, json);
+  std::string signedInfo = (*did)->SignInfo(seed, json, encrypt);
   char* signedInfoBuf = strdup(signedInfo.c_str());
   return signedInfoBuf;
 }
 
-char* AbsLayer_Did_SetInfo(int64_t obj, const char* seed, const char* json, int64_t wallet)
+char* AbsLayer_Did_SetInfo(int64_t obj, const char* seed, const char* json, int64_t wallet, bool encrypt)
 {
   std::shared_ptr<elastos::Did>* did = reinterpret_cast<std::shared_ptr<elastos::Did>*>(obj);
   std::shared_ptr<elastos::HDWallet>* hdWallet = reinterpret_cast<std::shared_ptr<elastos::HDWallet>*>(wallet);
-  std::string txid = (*did)->SetInfo(seed, json, *hdWallet);
+  std::string txid = (*did)->SetInfo(seed, json, *hdWallet, encrypt);
   char* txidBuf = strdup(txid.c_str());
   return txidBuf;
 }
@@ -46,14 +46,14 @@ int AbsLayer_Did_SyncInfo(int64_t obj)
   return ret;
 }
 
-char* AbsLayer_Did_GetInfo(int64_t obj, const char* key)
+char* AbsLayer_Did_GetInfo(int64_t obj, const char* key, bool encrypt, const char* seed)
 {
   if (obj == 0) {
     return nullptr;
   }
   
   std::shared_ptr<elastos::Did>* did = reinterpret_cast<std::shared_ptr<elastos::Did>*>(obj);
-  std::string value = (*did)->GetInfo(key);
+  std::string value = (*did)->GetInfo(key, encrypt, seed);
   char* valueBuf = strdup(value.c_str());
   return valueBuf;
 }
