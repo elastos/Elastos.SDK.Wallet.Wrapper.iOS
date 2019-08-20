@@ -8,7 +8,7 @@
 
 extension elastos {
   open class Transaction : WalletBase  {
-    init(address: String, amount: Int64, coinType: Int) {
+    public init(address: String, amount: Int64, coinType: Int) {
       super.init()
       mObj = AbstractLayer.Transaction.CreateTransaction(address: address, amount: amount, coinType: coinType)
     }

@@ -95,6 +95,8 @@ class ViewController: UIViewController {
     print("get did info: name=\(value)")
     
     value = did.getInfo(key: "name", encrypt: true, seed: "");
+    
+    let tx = elastos.Transaction(address: "", amount: Int64(1), coinType: 0);
   }
 
 }
