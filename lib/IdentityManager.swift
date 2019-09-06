@@ -22,9 +22,8 @@ extension elastos {
       return AbstractLayer.IdentityManager.GetMnemonic(language: language, words: words);
     }
     
-    public static func GetSeed(mnemonic: String, language: String, words: String, mnemonicPassword: String) -> String? {
-      return AbstractLayer.IdentityManager.GetSeed(mnemonic: mnemonic, language: language,
-                                                   words: words, mnemonicPassword: mnemonicPassword)
+    public static func GetSeed(mnemonic: String, mnemonicPassword: String) -> String? {
+      return AbstractLayer.IdentityManager.GetSeed(mnemonic: mnemonic, mnemonicPassword: mnemonicPassword)
     }
     
     public static func CreateIdentity(localPath: String) -> Identity {

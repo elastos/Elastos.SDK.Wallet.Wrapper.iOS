@@ -16,8 +16,7 @@ extern "C" {
 #endif
   
   char* AbsLayer_IdentityManager_GetMnemonic(const char* language, const char* words);
-  char* AbsLayer_IdentityManager_GetSeed(const char* mnemonic, const char* language,
-                                              const char* words, const char* mnemonicPassword);
+  char* AbsLayer_IdentityManager_GetSeed(const char* mnemonic, const char* mnemonicPassword);
   int64_t AbsLayer_IdentityManager_CreateIdentity(const char* localPath);
   
 #ifdef __cplusplus

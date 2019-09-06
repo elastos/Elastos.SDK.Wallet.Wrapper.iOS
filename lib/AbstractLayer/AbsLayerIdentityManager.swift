@@ -21,15 +21,11 @@ extension AbstractLayer {
       return mnemonic
     }
     
-    public static func GetSeed(mnemonic: String, language: String,
-                               words: String, mnemonicPassword: String) -> String? {
+    public static func GetSeed(mnemonic: String, mnemonicPassword: String) -> String? {
       let mnemonicPtr = String.ToUnsafeMutablePointer(data: mnemonic)
-      let languagePtr = String.ToUnsafeMutablePointer(data: language)
-      let wordsPtr = String.ToUnsafeMutablePointer(data: words)
       let mnemonicPasswordPtr = String.ToUnsafeMutablePointer(data: mnemonicPassword)
       
-      let seedPtr = AbsLayer_IdentityManager_GetSeed(mnemonicPtr, languagePtr,
-                                                          wordsPtr, mnemonicPasswordPtr)
+      let seedPtr = AbsLayer_IdentityManager_GetSeed(mnemonicPtr, mnemonicPasswordPtr)
       let seed = String.FromUnsafeMutablePointer(data: seedPtr)
       AbstractLayer_FreeBuf(seedPtr)
       

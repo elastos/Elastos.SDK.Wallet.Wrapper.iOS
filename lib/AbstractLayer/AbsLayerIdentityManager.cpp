@@ -19,10 +19,9 @@ char* AbsLayer_IdentityManager_GetMnemonic(const char* language, const char* wor
   return mnemonicBuf;
 }
 
-char* AbsLayer_IdentityManager_GetSeed(const char* mnemonic, const char* language,
-                                            const char* words, const char* mnemonicPassword)
+char* AbsLayer_IdentityManager_GetSeed(const char* mnemonic, const char* mnemonicPassword)
 {
-  std::string seed = elastos::IdentityManager::GetSeed(mnemonic, language, words, mnemonicPassword);
+  std::string seed = elastos::IdentityManager::GetSeed(mnemonic, mnemonicPassword);
   char* seedBuf = strdup(seed.c_str());
   return seedBuf;
 }

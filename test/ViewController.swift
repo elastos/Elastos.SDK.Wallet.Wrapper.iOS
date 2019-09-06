@@ -33,7 +33,7 @@ class ViewController: UIViewController {
   private func testSingleWallet() {
     let mnemonic: String? = "echo lounge olive vessel false bulk purse fitness pull luggage acquire audit"
     print("mnemonic: \(mnemonic!)")
-    let seed = elastos.IdentityManager.GetSeed(mnemonic: mnemonic!, language: "english", words: "", mnemonicPassword: "")
+    let seed = elastos.IdentityManager.GetSeed(mnemonic: mnemonic!, mnemonicPassword: "")
     print("seed: \(seed!)")
     
     let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
   private func testDid() {
     let mnemonic = testGenrateMnemonic()
     print("mnemonic: \(mnemonic!)")
-    let seed = elastos.IdentityManager.GetSeed(mnemonic: mnemonic!, language: "english", words: "", mnemonicPassword: "")
+    let seed = elastos.IdentityManager.GetSeed(mnemonic: mnemonic!, mnemonicPassword: "")
     print("seed: \(seed)")
     
     let paths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)
